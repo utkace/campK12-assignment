@@ -13,7 +13,7 @@ export const BannerHeader = styled.h1`
 `;
 
 export const BannerText = styled.p`
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-size: 24px;
   font-weight: normal;
   font-stretch: normal;

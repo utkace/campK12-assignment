@@ -6,7 +6,7 @@ import coin from "../../assets/images/landing/camp-k-12-coin.png";
 export default function Banner() {
   return (
     <Row style={{ display: "flex", marginTop: "5.188rem" }}>
-      <Col span={12} style={{ marginRight: "2.125rem" }}>
+      <Col span={12}>
         <BannerHeader>Welcome to the school of the future.</BannerHeader>
         <BannerText>
           Cutting-edge technology courses for Ages 8 - 18. Unlock{" "}
@@ -17,7 +17,14 @@ export default function Banner() {
           , and build a college-ready portfolio as you learn.
         </BannerText>
       </Col>
-      <Col span={12}>
+      <Col
+        span={12}
+        style={{
+          display: "flex",
+          alignItems: "end",
+          justifyContent: "flex-end",
+        }}
+      >
         <img src={bannerImg} alt="banner" />
       </Col>
     </Row>

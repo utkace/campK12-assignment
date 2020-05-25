@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import { Container, PageContainer } from "../../components/common";
-import { BackgroundVector } from "./components";
+import { BackgroundVector, BackgroundGradient } from "./components";
 import Navbar from "../../components/Navbar/Navbar";
 import Banner from "../../components/LandingBanner/Banner";
+import Carousel from "../../components/LandingCarousel/Carousel";
+import Courses from "../../components/Cousres/Courses";
 
 export default class Landing extends Component {
   render() {
@@ -10,10 +12,16 @@ export default class Landing extends Component {
       <Container>
         <Navbar />
         <BackgroundVector>
-          <PageContainer>
+          <PageContainer style={{ marginTop: "5.25rem" }}>
             <Banner />
+            <Carousel />
           </PageContainer>
         </BackgroundVector>
+        <BackgroundGradient>
+          <PageContainer>
+            <Courses />
+          </PageContainer>
+        </BackgroundGradient>
       </Container>
     );
   }

@@ -22,6 +22,10 @@ export const NavButton = styled(Button)`
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
   border: solid 1px #ebebeb;
   background-color: #f9fcff;
+  border-radius: 0.125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   :focus {
     outline: -webkit-focus-ring-color auto 0px;
@@ -31,6 +35,8 @@ export const NavButton = styled(Button)`
 export const CarouselSlider = styled(Slider)`
   display: flex;
   align-items: center;
+  margin-right: 5.344rem;
+  margin-left: 5.344rem;
 
   .slick-slide {
     display: flex;
@@ -41,7 +47,6 @@ export const CarouselSlider = styled(Slider)`
     justify-content: space-around;
   }
   .slick-list {
-    padding-bottom: 26px;
     width: 90%;
     margin: 0 auto;
   }

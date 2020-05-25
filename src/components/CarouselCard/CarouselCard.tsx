@@ -13,7 +13,7 @@ export default function CarouselCard(props: Props) {
       <img
         src={imageLink}
         alt={text}
-        style={{ padding: "1.5rem 3.125rem", height: "108px", width: "108px" }}
+        style={{ height: "108px", width: "108px" }}
       />
       <CardText>{text}</CardText>
     </CardBody>
@@ -30,7 +30,6 @@ const CardText = styled.h1`
   letter-spacing: 0.2px;
   text-align: center;
   margin: 0px;
-  padding: 0rem 1.5rem 1.5rem 1.5rem;
 `;
 
 const CardBody = styled(Card)`
