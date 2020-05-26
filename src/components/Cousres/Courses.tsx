@@ -6,6 +6,9 @@ import {
   HeaderContainer,
   Text,
   CourseCardContainer,
+  TextContainer,
+  LeftText,
+  Space,
 } from "./components";
 import coin from "../../assets/images/landing/camp-k-12-coin.png";
 import shield from "../../assets/images/landing/shield.svg";
@@ -33,20 +36,25 @@ export default function Courses() {
         Learn from live teachers, not pre-recorded videos, in our intelligent
         virtual classrooms.
       </Text>
-      <Text>
-        <span style={{ marginRight: "5px" }}>
-          <img src={shield} alt="shield" />
-        </span>
-        = 21st century skills you’ll unlock
-        <span style={{ marginLeft: "28px", marginRight: "5px" }}>
-          <img
-            src={coin}
-            alt="coin"
-            style={{ height: "24px", width: "24px" }}
-          />
-        </span>
-        = coins you’ll earn for completion
-      </Text>
+      <TextContainer>
+        <LeftText>
+          <span style={{ marginRight: "5px" }}>
+            <img src={shield} alt="shield" />
+          </span>
+          = 21st century skills you’ll unlock
+        </LeftText>
+        <Space />
+        <LeftText>
+          <span style={{ marginRight: "5px" }}>
+            <img
+              src={coin}
+              alt="coin"
+              style={{ height: "19px", width: "19px" }}
+            />
+          </span>
+          = coins you’ll earn for completion
+        </LeftText>
+      </TextContainer>
 
       <Row style={{ maxWidth: "912px", marginTop: "5.313rem" }}>
         {data.map((course: any) => (

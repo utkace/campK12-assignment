@@ -40,10 +40,6 @@ export const ImageTag = styled(Tag)`
 
 export const CardContent = styled.div`
   padding: 1rem;
-
-  @media (max-width: 786px) {
-    padding: 0.5rem;
-  }
 `;
 export const CardHeader = styled.h1`
   font-family: Montserrat;
@@ -76,6 +72,8 @@ export const InfoHeader = styled.h1`
   line-height: 2;
   letter-spacing: 0.17px;
   color: #777b8c;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 `;
 
 export const InfoText = styled.p`
