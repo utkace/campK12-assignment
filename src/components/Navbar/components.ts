@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Layout } from "antd";
+import { Layout, Dropdown } from "antd";
 const { Header } = Layout;
 
 export const NavContainer = styled(Header)`
@@ -36,4 +36,48 @@ export const NavLimiter = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 100%;
+`;
+
+export const UserButton = styled(Dropdown.Button)`
+  height: 34px;
+  padding-left: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  button:first-child {
+    background-color: #71aef3;
+    border: none;
+    font-family: Montserrat;
+    font-size: 17px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    color: #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+    padding: 0px;
+    padding-left: 0.5rem;
+  }
+
+  button:last-child {
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+  }
+`;
+
+export const MenuIcon = styled.img`
+  margin-left: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+
+  :hover {
+    transform: scale(1.15);
+  }
+`;
+export const UserIcon = styled.img`
+  height: 32px;
+  padding-left: 0.5rem;
 `;
