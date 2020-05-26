@@ -4,17 +4,15 @@ import Landing from "../containers/Landing/Landing";
 import Courses from "../containers/Courses/Courses";
 export default function AppNavigator() {
   return (
-    <div>
-      <Router>
-        <Switch>
-          <Route exact path="/">
-            <Landing />
-          </Route>
-          <Route path="/courses">
-            <Courses />
-          </Route>
-        </Switch>
-      </Router>
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          <Landing />
+        </Route>
+        <Route path="/courses">
+          <Courses />
+        </Route>
+      </Switch>
+    </Router>
   );
 }

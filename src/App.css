@@ -1,2 +1,13 @@
+@import "~antd/dist/antd.css";
+
 /* font-family*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+
+:root {
+  font-size: 16px;
+
+  /* 768px and down*/
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+}
