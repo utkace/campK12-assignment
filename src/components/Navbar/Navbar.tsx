@@ -10,7 +10,7 @@ import {
   MenuIcon,
 } from "./components";
 import { Menu } from "antd";
-import { DownOutlined, UserOutlined } from "@ant-design/icons";
+import { DownOutlined } from "@ant-design/icons";
 import shield from "../../assets/images/landing/shield.svg";
 import userAva from "../../assets/images/landing/user-avatar.png";
 export default function Navbar() {
