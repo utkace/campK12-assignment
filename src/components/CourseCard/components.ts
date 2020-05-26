@@ -165,4 +165,8 @@ export const Enroll = styled.p`
   letter-spacing: 2px;
   text-align: center;
   color: #076fec;
+
+  :hover {
+    color: #73caf3;
+  }
 `;
