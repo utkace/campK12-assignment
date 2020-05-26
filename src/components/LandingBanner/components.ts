@@ -1,6 +1,12 @@
 import styled from "styled-components";
-import { Col } from "antd";
+import { Col, Row } from "antd";
 
+export const BannerContainer = styled(Row)`
+  /* 768px and down*/
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+  }
+`;
 export const BannerHeader = styled.h1`
   font-family: "Montserrat";
   font-size: 3.25rem;
@@ -49,6 +55,7 @@ export const BannerImg = styled(Col)`
     /* 768px and down*/
     @media (max-width: 768px) {
       width: 80%;
+      margin-bottom: 2rem;
     }
   }
 `;
