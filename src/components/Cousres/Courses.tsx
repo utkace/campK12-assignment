@@ -44,7 +44,10 @@ export default function Courses() {
       <Row style={{ maxWidth: "912px", marginTop: "5.313rem" }}>
         {data.map((course: any) => (
           <Col
-            span={8}
+            lg={8}
+            md={8}
+            sm={12}
+            xs={24}
             style={{ paddingLeft: "0.938rem", paddingRight: "0.938rem" }}
           >
             <CourseCard data={course} />
