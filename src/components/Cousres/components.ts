@@ -48,6 +48,8 @@ export const Live = styled(Button)`
 
   @media (max-width: 786px) {
     font-size: 14px;
+    padding: 0px;
+    min-width: 5rem;
   }
   :hover,
   :active,
