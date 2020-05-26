@@ -45,11 +45,14 @@ export const Live = styled(Button)`
   text-align: center;
   color: #ffffff;
   border: none;
+  padding: 0px;
+  min-width: 6rem;
 
   @media (max-width: 786px) {
     font-size: 14px;
-    padding: 0px;
     min-width: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
   :hover,
   :active,
@@ -67,6 +70,15 @@ export const Dot = styled.span`
   margin-right: 0.5rem;
 `;
 
+export const TextContainer = styled.div`
+  display: flex;
+
+  @media (max-width: 786px) {
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 1rem;
+  }
+`;
 export const Text = styled.p`
   margin: 0px;
   font-family: Montserrat;
@@ -80,10 +92,31 @@ export const Text = styled.p`
   color: #777b8c;
 
   @media (max-width: 786px) {
-    margin-top: 1.5rem;
     margin-left: 1.8rem;
     margin-right: 1.8rem;
   }
+`;
+
+export const LeftText = styled.p`
+  margin: 0px;
+  font-family: Montserrat;
+  font-size: 17px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.53;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #777b8c;
+
+  @media (max-width: 786px) {
+    text-align: left;
+    width: 100%;
+  }
+`;
+
+export const Space = styled.span`
+  width: 28px;
 `;
 
 export const CourseCardContainer = styled(Col)`
