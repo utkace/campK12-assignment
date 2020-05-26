@@ -46,6 +46,9 @@ export const Live = styled(Button)`
   color: #ffffff;
   border: none;
 
+  @media (max-width: 786px) {
+    font-size: 14px;
+  }
   :hover,
   :active,
   :focus {
