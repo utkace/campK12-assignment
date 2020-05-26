@@ -19,6 +19,8 @@ export const NavContainer = styled(Header)`
   background-color: transparent;
   padding: 0px;
   height: 6.375rem;
+  box-shadow: ${(props: { isSolidBackground: boolean }) =>
+    props.isSolidBackground ? "0 0 10px 0 rgba(0, 0, 0, 0.1)" : "none"};
 
   /* 1200px and down*/
   @media (max-width: 1200px) {
