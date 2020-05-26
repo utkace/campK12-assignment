@@ -6,7 +6,7 @@ export default function Footer() {
     <FooterContainer>
       <FooterText>
         Questions? Contact us at
-        <span style={{ fontWeight: "bold" }}>info@campk12.com</span>
+        <span style={{ fontWeight: "bold" }}> info@campk12.com</span>
       </FooterText>
     </FooterContainer>
   );
