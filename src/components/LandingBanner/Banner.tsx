@@ -1,11 +1,17 @@
 import React from "react";
-import { Row, Col } from "antd";
-import { BannerHeader, BannerText, Coin, BannerImg } from "./components";
+import { Col } from "antd";
+import {
+  BannerHeader,
+  BannerText,
+  Coin,
+  BannerImg,
+  BannerContainer,
+} from "./components";
 import bannerImg from "../../assets/images/landing/header-photo.png";
 import coin from "../../assets/images/landing/camp-k-12-coin.png";
 export default function Banner() {
   return (
-    <Row style={{ display: "flex", marginTop: "5.188rem" }}>
+    <BannerContainer style={{ display: "flex", marginTop: "5.188rem" }}>
       <Col lg={12} md={12} sm={24} xs={24}>
         <BannerHeader>Welcome to the school of the future.</BannerHeader>
         <BannerText>
@@ -20,6 +26,6 @@ export default function Banner() {
       <BannerImg lg={12} md={12} sm={24} xs={24}>
         <img src={bannerImg} alt="banner" />
       </BannerImg>
-    </Row>
+    </BannerContainer>
   );
 }

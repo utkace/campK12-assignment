@@ -4,6 +4,9 @@ import { Tag } from "antd";
 export const CardImage = styled.div`
   height: 158px;
   position: relative;
+  @media (max-width: 576px) {
+    height: 200px;
+  }
 `;
 
 export const Image = styled.img`
