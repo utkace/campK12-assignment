@@ -10,12 +10,10 @@ export const BannerHeader = styled.h1`
   line-height: 1.15;
   letter-spacing: 0.22px;
   color: #ffffff;
-  padding-right: 8.25rem;
 
   /* 768px and down*/
   @media (max-width: 768px) {
     text-align: center;
-    padding-right: 0rem;
   }
 `;
 
@@ -29,12 +27,10 @@ export const BannerText = styled.p`
   letter-spacing: 0.24px;
   color: #ffffff;
   margin: 0px;
-  padding-right: 4.5rem;
 
   /* 768px and down*/
   @media (max-width: 768px) {
     text-align: center;
-    padding-right: 0px;
   }
 `;
 
