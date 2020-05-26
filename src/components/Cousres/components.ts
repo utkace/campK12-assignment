@@ -34,6 +34,7 @@ export const Live = styled(Button)`
   border-radius: 0.125rem;
   display: flex;
   align-items: center;
+  justify-content: center;
   font-family: Montserrat;
   font-size: 18px;
   font-weight: 600;
@@ -72,6 +73,12 @@ export const Text = styled.p`
   letter-spacing: 0.2px;
   text-align: center;
   color: #777b8c;
+
+  @media (max-width: 786px) {
+    margin-top: 1.5rem;
+    margin-left: 1.8rem;
+    margin-right: 1.8rem;
+  }
 `;
 
 export const CourseCardContainer = styled(Col)`
@@ -82,5 +89,11 @@ export const CourseCardContainer = styled(Col)`
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     padding-bottom: 0.938rem;
+  }
+
+  @media (max-width: 576px) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 2rem;
   }
 `;
