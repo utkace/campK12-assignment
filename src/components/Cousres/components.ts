@@ -40,7 +40,6 @@ export const Live = styled(Button)`
   font-weight: 600;
   font-stretch: normal;
   font-style: normal;
-  line-height: 2.44;
   letter-spacing: 0.1px;
   text-align: center;
   color: #ffffff;
