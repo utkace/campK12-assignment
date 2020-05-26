@@ -1,5 +1,12 @@
 import React from "react";
-import { CourseHeader, Live, Dot, HeaderContainer, Text } from "./components";
+import {
+  CourseHeader,
+  Live,
+  Dot,
+  HeaderContainer,
+  Text,
+  CourseCardContainer,
+} from "./components";
 import coin from "../../assets/images/landing/camp-k-12-coin.png";
 import shield from "../../assets/images/landing/shield.svg";
 import { data } from "../../data/courses";
@@ -43,15 +50,9 @@ export default function Courses() {
 
       <Row style={{ maxWidth: "912px", marginTop: "5.313rem" }}>
         {data.map((course: any) => (
-          <Col
-            lg={8}
-            md={8}
-            sm={12}
-            xs={24}
-            style={{ paddingLeft: "0.938rem", paddingRight: "0.938rem" }}
-          >
+          <CourseCardContainer lg={8} md={8} sm={12} xs={24}>
             <CourseCard data={course} />
-          </Col>
+          </CourseCardContainer>
         ))}
       </Row>
     </div>

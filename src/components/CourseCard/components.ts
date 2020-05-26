@@ -37,6 +37,10 @@ export const ImageTag = styled(Tag)`
 
 export const CardContent = styled.div`
   padding: 1rem;
+
+  @media (max-width: 786px) {
+    padding: 0.5rem;
+  }
 `;
 export const CardHeader = styled.h1`
   font-family: Montserrat;

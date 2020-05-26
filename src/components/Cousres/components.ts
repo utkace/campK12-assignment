@@ -1,10 +1,15 @@
 import styled from "styled-components";
-import { Button } from "antd";
+import { Button, Col } from "antd";
 
 export const HeaderContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 576px) {
+    flex-direction: column;
+    text-align: center;
+  }
 `;
 
 export const CourseHeader = styled.h1`
@@ -19,6 +24,9 @@ export const CourseHeader = styled.h1`
   margin: 0px;
   margin-right: 2.313rem;
   margin-bottom: 0.5rem;
+  @media (max-width: 576px) {
+    margin: 0px;
+  }
 `;
 
 export const Live = styled(Button)`
@@ -64,4 +72,15 @@ export const Text = styled.p`
   letter-spacing: 0.2px;
   text-align: center;
   color: #777b8c;
+`;
+
+export const CourseCardContainer = styled(Col)`
+  padding-left: 0.938rem;
+  padding-right: 0.938rem;
+
+  @media (max-width: 786px) {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 0.938rem;
+  }
 `;
