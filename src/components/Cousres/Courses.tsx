@@ -11,7 +11,7 @@ import coin from "../../assets/images/landing/camp-k-12-coin.png";
 import shield from "../../assets/images/landing/shield.svg";
 import { data } from "../../data/courses";
 import CourseCard from "../CourseCard/CourseCard";
-import { Row, Col } from "antd";
+import { Row } from "antd";
 export default function Courses() {
   return (
     <div
