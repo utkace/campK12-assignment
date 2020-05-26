@@ -45,7 +45,7 @@ let settings = {
       },
     },
     {
-      breakpoint: 600,
+      breakpoint: 768,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2,
@@ -53,7 +53,7 @@ let settings = {
       },
     },
     {
-      breakpoint: 480,
+      breakpoint: 576,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,

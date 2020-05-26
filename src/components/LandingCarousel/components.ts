@@ -50,4 +50,8 @@ export const CarouselSlider = styled(Slider)`
     width: 90%;
     margin: 0 auto;
   }
+
+  @media (max-width: 768px) {
+    margin: 0px;
+  }
 `;

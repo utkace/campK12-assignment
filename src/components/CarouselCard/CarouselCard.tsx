@@ -10,11 +10,7 @@ export default function CarouselCard(props: Props) {
   const { imageLink, text } = props;
   return (
     <CardBody hoverable>
-      <img
-        src={imageLink}
-        alt={text}
-        style={{ height: "108px", width: "108px" }}
-      />
+      <img src={imageLink} alt={text} />
       <CardText>{text}</CardText>
     </CardBody>
   );
@@ -43,5 +39,9 @@ const CardBody = styled(Card)`
     flex-direction: column;
     align-items: center;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  }
+  img {
+    height: 6.75rem;
+    width: 6.75rem;
   }
 `;
