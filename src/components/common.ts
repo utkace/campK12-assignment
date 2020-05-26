@@ -12,4 +12,10 @@ export const PageContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
+
+  /* 1200px and down*/
+  @media (max-width: 1200px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 `;
