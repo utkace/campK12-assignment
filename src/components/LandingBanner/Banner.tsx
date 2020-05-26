@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col } from "antd";
-import { BannerHeader, BannerText, Coin } from "./components";
+import { BannerHeader, BannerText, Coin, BannerImg } from "./components";
 import bannerImg from "../../assets/images/landing/header-photo.png";
 import coin from "../../assets/images/landing/camp-k-12-coin.png";
 export default function Banner() {
@@ -17,19 +17,9 @@ export default function Banner() {
           , and build a college-ready portfolio as you learn.
         </BannerText>
       </Col>
-      <Col
-        lg={12}
-        md={12}
-        sm={24}
-        xs={24}
-        style={{
-          display: "flex",
-          alignItems: "end",
-          justifyContent: "flex-end",
-        }}
-      >
+      <BannerImg lg={12} md={12} sm={24} xs={24}>
         <img src={bannerImg} alt="banner" />
-      </Col>
+      </BannerImg>
     </Row>
   );
 }
