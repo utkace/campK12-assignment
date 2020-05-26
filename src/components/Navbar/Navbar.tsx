@@ -35,12 +35,12 @@ export default function Navbar() {
           <img
             src={notif}
             alt="notification icon"
-            style={{ paddingLeft: "1rem" }}
+            style={{ paddingLeft: "1rem", cursor: "pointer" }}
           />
           <img
             src={leaderboard}
             alt="leaderboard icon"
-            style={{ paddingLeft: "1rem" }}
+            style={{ paddingLeft: "1rem", cursor: "pointer" }}
           />
         </div>
       </NavLimiter>
