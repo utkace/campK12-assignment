@@ -19,6 +19,12 @@ export const NavContainer = styled(Header)`
   background-color: transparent;
   padding: 0px;
   height: 6.375rem;
+
+  /* 1200px and down*/
+  @media (max-width: 1200px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 `;
 
 export const NavLimiter = styled.div`
