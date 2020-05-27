@@ -25,21 +25,10 @@ import coin from "../../assets/images/landing/camp-k-12-coin.png";
 import date from "../../assets/images/landing/date.svg";
 import day from "../../assets/images/landing/days.svg";
 import time from "../../assets/images/landing/time.svg";
+import { Course } from "../Cousres/types";
 
 type Props = {
-  data: {
-    imgSrc: string;
-    imageTag: string;
-    title: string;
-    prereq: string;
-    grades: string;
-    skills: string[];
-    coins: string;
-    date: string;
-    day: string;
-    time: string;
-    price: string;
-  };
+  data: Course;
 };
 
 const generateSkillTags = (skills: string[]) => {
