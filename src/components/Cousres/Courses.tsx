@@ -15,6 +15,7 @@ import shield from "../../assets/images/landing/shield.svg";
 import { data } from "../../data/courses";
 import CourseCard from "../CourseCard/CourseCard";
 import { Row } from "antd";
+import { Course } from "./types";
 export default function Courses() {
   return (
     <div
@@ -57,7 +58,7 @@ export default function Courses() {
       </TextContainer>
 
       <Row style={{ maxWidth: "912px", marginTop: "5.313rem" }}>
-        {data.map((course: any) => (
+        {data.map((course: Course) => (
           <CourseCardContainer lg={8} md={8} sm={12} xs={24}>
             <CourseCard data={course} />
           </CourseCardContainer>

@@ -8,6 +8,7 @@ import {
   UserButton,
   UserIcon,
   MenuIcon,
+  Logo,
 } from "./components";
 import { Menu } from "antd";
 import { DownOutlined } from "@ant-design/icons";
@@ -46,7 +47,7 @@ export default function Navbar() {
     <NavContainer id="header-nav-bar" isSolidBackground={navBackground}>
       <NavLimiter>
         <div>
-          <img src={logo} alt="logo" />
+          <Logo src={logo} alt="logo" />
         </div>
         <div style={{ display: "flex" }}>
           <MenuIcon src={notif} alt="notification icon" />

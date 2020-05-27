@@ -5,6 +5,7 @@ export const BannerContainer = styled(Row)`
   /* 768px and down*/
   @media (max-width: 768px) {
     flex-direction: column-reverse;
+    align-items: center;
   }
 `;
 export const BannerHeader = styled.h1`
@@ -20,6 +21,12 @@ export const BannerHeader = styled.h1`
   /* 768px and down*/
   @media (max-width: 768px) {
     text-align: center;
+  }
+
+  /* 576px and down*/
+  @media (max-width: 576px) {
+    text-align: center;
+    font-size: 2.5rem;
   }
 `;
 
@@ -37,6 +44,12 @@ export const BannerText = styled.p`
   /* 768px and down*/
   @media (max-width: 768px) {
     text-align: center;
+  }
+
+  /* 768px and down*/
+  @media (max-width: 576px) {
+    text-align: center;
+    font-size: 1.25rem;
   }
 `;
 

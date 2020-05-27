@@ -2,6 +2,12 @@ import styled from "styled-components";
 import { Layout, Dropdown } from "antd";
 const { Header } = Layout;
 
+export const Logo = styled.img`
+  /* 576px and down*/
+  @media (max-width: 576px) {
+    transform: scale(0.85);
+  }
+`;
 export const NavContainer = styled(Header)`
   display: flex;
   flex-direction: row;
@@ -66,6 +72,12 @@ export const UserButton = styled(Dropdown.Button)`
     border: none;
     color: #ffffff;
   }
+
+  /* 576px and down*/
+  @media (max-width: 576px) {
+    transform: scale(0.85);
+    padding-left: 0.5rem;
+  }
 `;
 
 export const MenuIcon = styled.img`
@@ -75,6 +87,12 @@ export const MenuIcon = styled.img`
 
   :hover {
     transform: scale(1.15);
+  }
+
+  /* 576px and down*/
+  @media (max-width: 576px) {
+    transform: scale(0.85);
+    margin-left: 0.85px;
   }
 `;
 export const UserIcon = styled.img`
